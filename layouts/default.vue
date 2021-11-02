@@ -4,7 +4,7 @@
     <main class="content-container">
       <Nuxt></Nuxt>
     </main>
-
+    <Footer></Footer>
   </div>
 </template>
 
@@ -51,3 +51,9 @@ html {
 }
 
 </style>
+<script>
+import Footer from "../components/footer";
+export default {
+  components: {Footer}
+}
+</script>
