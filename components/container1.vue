@@ -2,7 +2,7 @@
   <div class="container">
     <div class="outer-container">
       <div class="text-container">
-        <img class='img' src={{ URL }}/>
+        <img class='img' src={{ URL }} onerror="this.style.display='none'"/>
         <h1 class="title">{{ title }}</h1>
         <p class="text">{{body}}</p>
       </div>

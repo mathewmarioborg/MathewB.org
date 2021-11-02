@@ -9,13 +9,12 @@
 <script>
 import Container1 from '../components/container1'
 import PageHeader from "../components/PageHeader";
+
 export default {
   components: {PageHeader, Container1 }
 }
 </script>
 
 <style>
-
-
 
 </style>
