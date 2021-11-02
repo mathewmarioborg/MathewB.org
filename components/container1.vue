@@ -1,9 +1,11 @@
 <template>
-  <div class="box">
-    <div class="text-container">
-      <img class='img' src={{ URL }}/>
-      <h1 class="title">{{ title }}</h1>
-      <p class="text">{{body}}</p>
+  <div class="container">
+    <div class="outer-container">
+      <div class="text-container">
+        <img class='img' src={{ URL }}/>
+        <h1 class="title">{{ title }}</h1>
+        <p class="text">{{body}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -29,8 +31,17 @@ export default {
 </script>
 
 <style scoped>
-.box{
-  max-width: 80%;
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.outer-container{
+  width: 80%;
   background-color: #559B81;
   text-align: center;
 
@@ -48,9 +59,5 @@ export default {
   margin-bottom: 0.1em;
   padding: 0;
 }
-@media all and (max-width: 1100px) {
-  .box {
-    max-width: 80%;
-  }
-}
+
 </style>
