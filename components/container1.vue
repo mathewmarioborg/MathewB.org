@@ -2,8 +2,8 @@
   <div class="container">
     <div class="outer-container">
       <div class="text-container">
-        <img class='img' src={{ URL }} onerror="this.style.display='none'"/>
-        <h1 class="title">{{ title }}</h1>
+        <img class="img" src="/assets.jpg" alt="fuck you"/>
+        <h1 class="title">{{title}}</h1>
         <p class="text">{{body}}</p>
       </div>
     </div>
@@ -22,7 +22,7 @@ export default {
       type: String,
       required: true
     },
-    URL:{
+    img:{
       type: String,
       required: false
     }
