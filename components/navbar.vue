@@ -2,7 +2,7 @@
   <div class="nav">
     <a href="/" class="link">Home</a>
     <a href="/about" class='link'>About</a>
-    <a herf="/portfolio" class='link'>Portfolio</a>
+    <a href="/portfolio"  class="link">Portfolio</a>
     <a href="/contact" class='link'>Contact</a>
   </div>
 </template>
