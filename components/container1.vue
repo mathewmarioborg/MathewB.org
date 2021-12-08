@@ -2,7 +2,7 @@
   <div class="container">
     <div class="outer-container">
       <div class="text-container">
-        <img class="img" src="/assets.jpg" alt="fuck you"/>
+        <img class="img" :src="imageURL" alt="fuckyou" width="30%" height="30%">
         <h1 class="title">{{title}}</h1>
         <p class="text">{{body}}</p>
       </div>
@@ -26,7 +26,13 @@ export default {
       type: String,
       required: false
     }
-  }
+  },
+  computed:
+    {
+      imageURL(){
+        return `/_nuxt/assets/${this.img}`;
+      }
+    },
 }
 </script>
 

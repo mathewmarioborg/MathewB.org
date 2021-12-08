@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img src="/R.png" width="30%" height="30%" alt="your mom">
+    <p>test one</p>
+    <img src="~/assets/Mathew_Borg_Final_White.jpg" alt="img test">
   </div>
 </template>
 
