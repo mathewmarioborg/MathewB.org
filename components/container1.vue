@@ -2,7 +2,7 @@
   <div class="container">
     <div class="outer-container">
       <div class="text-container">
-        <img class="img" :src="imageURL" alt="fuckyou" width="30%" height="30%">
+        <img class="img" :src="imageURL" alt="fuckyou" width="30%" height="30%" onerror="this.style.display='none'">
         <h1 class="title">{{title}}</h1>
         <p class="text">{{body}}</p>
       </div>
@@ -34,6 +34,7 @@ export default {
       }
     },
 }
+
 </script>
 
 <style scoped>

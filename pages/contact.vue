@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>test</h1>
+  <div class="page">
+    <PageHeader title="Contact" subtitle="Feel Free To Get In Touch"/>
   </div>
 </template>
 
@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style scoped>
-
+.page{
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
 </style>

@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <p>test one</p>
-    <img src="~/assets/Mathew_Borg_Final_White.jpg" alt="img test">
+  <div class="page">
+    <PageHeader title="About" subtitle="All About Me"/>
   </div>
 </template>
 
@@ -12,6 +11,10 @@ export default {
 </script>
 
 <style scoped>
-
+.page{
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
 </style>
 

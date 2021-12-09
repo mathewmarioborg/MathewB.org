@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>test Port</h1>
+  <div class="page">
+    <PageHeader title="Portfolio" subtitle="A Compilation Of All My Work"/>
   </div>
 </template>
 
@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style scoped>
-
+.page{
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
 </style>

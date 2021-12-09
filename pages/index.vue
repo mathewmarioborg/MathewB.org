@@ -24,10 +24,4 @@ export default {
   flex-direction: column;
   -ms-flex-align: center;
 }
-.container{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 1em;
-}
 </style>

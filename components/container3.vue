@@ -6,7 +6,7 @@
             <h1 class="title">{{title}}</h1>
             <p>{{body}}</p>
           </div>
-          <img :src="imageURL" alt="fuckyou" width="30%" height="30%">
+          <img :src="imageURL" alt="fuckyou" width="30%" height="30%" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
@@ -66,7 +66,6 @@ export default {
   padding: 0;
 }
 .txt{
-  width: 70%;
   padding-right: 1em;
 }
 </style>

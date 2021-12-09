@@ -2,7 +2,7 @@
   <div class="container">
     <div class="outer-container">
       <div class="text-container">
-          <img :src="imageURL" alt="fuckyou" width="30%" height="30%">
+          <img :src="imageURL" alt="fuckyou" width="30%" height="30%" onerror="this.style.display='none'">
           <div class="txt">
             <h1 class="title">{{title}}</h1>
             <p>{{body}}</p>
@@ -67,6 +67,5 @@ export default {
 }
 .txt{
   width: 70%;
-  padding-left: 1em;
 }
 </style>
