@@ -54,7 +54,7 @@ export default {
   margin-right: 1em;
   background-color: #243742;
   color: aliceblue;
-  padding: 0.3em 1em;
+  padding: 1em;
 }
 .title {
   font-style: italic;
