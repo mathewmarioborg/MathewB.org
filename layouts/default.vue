@@ -47,7 +47,6 @@ html {
   min-height: 100%;
   flex-grow: 1;
   justify-self: center;
-
 }
 
 </style>

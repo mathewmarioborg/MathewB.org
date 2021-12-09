@@ -2,9 +2,11 @@
   <div class="container">
     <div class="outer-container">
       <div class="text-container">
-        <img class="img" :src="imageURL" alt="fuckyou" width="30%" height="30%">
-        <h1 class="title">{{title}}</h1>
-        <p class="text">{{body}}</p>
+          <img :src="imageURL" alt="fuckyou" width="30%" height="30%">
+          <div class="txt">
+            <h1 class="title">{{title}}</h1>
+            <p>{{body}}</p>
+          </div>
       </div>
     </div>
   </div>
@@ -12,7 +14,7 @@
 
 <script>
 export default {
-  name: 'container1',
+  name: 'container2',
   props:{
     title:{
       type: String,
@@ -27,12 +29,11 @@ export default {
       required: false
     }
   },
-  computed:
-    {
+  computed:{
       imageURL(){
         return `/_nuxt/assets/${this.img}`;
       }
-    },
+    }
 }
 </script>
 
@@ -50,16 +51,22 @@ export default {
   text-align: center;
 }
 .text-container {
+  display: flex;
+  flex-direction: row;
   margin-left: 1em;
   margin-right: 1em;
   background-color: #243742;
   color: aliceblue;
-  padding: 0.3em 1em;
+  padding: 1em;
 }
 .title {
   font-style: italic;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
   padding: 0;
+}
+.txt{
+  width: 70%;
+  padding-left: 1em;
 }
 </style>
