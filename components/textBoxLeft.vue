@@ -3,8 +3,10 @@
     <div class="outer-container">
       <div class="text-container">
         <img :src="image" alt="Mathew Borg" width="30%" height="30%">
-        <h1 class="title">{{ title }}</h1>
-        <p class="text">{{body}}</p>
+        <div class="txt">
+          <h1 class="title">{{ title }}</h1>
+          <p class="text">{{body}}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -12,7 +14,7 @@
 
 <script>
 export default {
-  name: "textBox",
+  name: "textBoxLeft",
   props: {
     title: {
       type: String,
@@ -44,6 +46,8 @@ export default {
   text-align: center;
 }
 .text-container {
+  display: flex;
+  flex-direction: row;
   margin-left: 1em;
   margin-right: 1em;
   background-color: #243742;
@@ -56,10 +60,7 @@ export default {
   margin-bottom: 0.1em;
   padding: 0;
 }
-@media all and (max-width: 1100px) {
-  .box {
-    max-width: 80%;
-  }
+.txt{
+  width: 70%;
 }
 </style>
-
