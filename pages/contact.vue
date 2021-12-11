@@ -1,6 +1,7 @@
 <template>
   <div class="page">
     <PageHeader title="Contact" subtitle="Feel Free To Get In Touch"/>
+    <contactForm></contactForm>
   </div>
 </template>
 
