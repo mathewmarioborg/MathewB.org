@@ -62,5 +62,6 @@ export default {
 }
 .txt{
   width: 70%;
+  padding: 1em;
 }
 </style>
