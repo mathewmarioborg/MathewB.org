@@ -2,7 +2,6 @@
   <div class="container">
     <div class="outer-container">
       <div class="text-container">
-        <img :src="image" alt="Mathew Borg" width="30%" height="30%">
         <h1 class="title">{{ title }}</h1>
         <p class="text">{{body}}</p>
       </div>
@@ -21,10 +20,6 @@ export default {
     body: {
       type: String,
       required: true
-    },
-    image: {
-      type: String,
-      required: false
     }
   }
 }
